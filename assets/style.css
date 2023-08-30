@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url("./Gotham-Black.otf");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
 
 body{
     border-top: 3px solid #006fc1;
@@ -80,7 +87,7 @@ p, h2{
     background-size: cover;
 }
 #home h2{
-    font-family: Montserrat;
+    font-family: "Gotham";
     margin: 0 1em;
     text-align: left;
     padding-top: 5vh;
