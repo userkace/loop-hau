@@ -64,6 +64,10 @@ p, h2{
     margin: 0;
     color: white;
 }
+h2{
+    font-family: "Gotham";
+    text-transform: uppercase;
+}
 .section{
     margin: 0;
     height: 100vh;
@@ -86,13 +90,13 @@ p, h2{
     background-attachment: fixed;
     background-size: cover;
 }
+
 #home h2{
-    font-family: "Gotham";
     margin: 0 1em;
     text-align: left;
     padding-top: 5vh;
     font-weight: 900;
-    font-size: 5em;
+    font-size: 9em;
     line-height: 0.90em;
     color: var(--blue);
     text-shadow: 1px 1px 2px var(--dark-blue);
@@ -103,19 +107,34 @@ p, h2{
 #home .light-blue{
     color: var(--light-blue);
 }
+
 #about{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: var(--dark-blue);
-    color: var(--off-white)
+    color: var(--off-white);
+    text-align: left;
 }
-#about p{
+#about .content{
+    display: flex;
+    flex-direction: row;
     text-align: justify;
     vertical-align: middle;
     max-width: 50%;
     text-indent: 5em;
+}
+#about h2{
+    font-size: 4em;
+}
+#about .content p{
+    font-size: 2em;
+}
+#about img{
+    margin-left: 0em;
+    max-width: 20%;
+    transform: rotate(270deg);
 }
 
 
@@ -145,10 +164,29 @@ p, h2{
         background: var(--dark-grey);
         padding-left: 1em;
     }
+    #home{
+        background-position: 50%;
+    }
+    
+    
 }
-
-@media screen and (max-width:800px){
+@media screen and (max-width:900px){
     #home h2{
         font-size: 28px;
     }
+    #about .content{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width:1100px){
+    #home h2{
+        font-size: 3.5em;
+    }
+    #about .content p{
+        font-size: 1em;
+    }
+    #about img{
+        display: none;
+    }
+
 }
