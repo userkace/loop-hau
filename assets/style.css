@@ -116,6 +116,10 @@ h2{
     background: var(--dark-blue);
     color: var(--off-white);
     text-align: left;
+    background-image: url('./images/loop_cover.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 #about .content{
     display: flex;
