@@ -7,7 +7,7 @@
   }
 
 *{
-    cursor: url('./images/loop_cursor.png'), auto;
+    cursor: url('./images/loop_cursor.png'), url('./images/loop_cursor_alt.png'), auto;
 }
 
 body{
